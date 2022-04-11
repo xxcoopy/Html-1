@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Grid Columns #1 - Grant Cooper</title>
+
+
+
+</head>
+
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: 80px auto auto 30px;
+  gap: 20px;
+  background-color: black;
+  padding: 15px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  background-color: darkmagenta;
+}
+
+
+.item1 {
+  grid-column-start: 0;
+  grid-column-end: span 0;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+      background-color: blue;
+}
+
+p {
+  color: mediumvioletred;
+}
+
+</style>
+</head>
+<body>
+
+<h1><strong>Grid Container - Grid Columns Property</strong></h1>
+
+<p>Grids are used in most HTML pages to make it easier to adapt to mobile size and other features</p>
+
+<div class="grid-container">
+<div class="item1">1</div>
+  <div>2</div>
+  <div>3</div>  
+<div class="item4">4</div>
+<div class="item5">5</div>
+  <div>6</div>  
+  <div>7</div>
+<div class="item8">8</div>
+</div>
+
+</body>
+</html>

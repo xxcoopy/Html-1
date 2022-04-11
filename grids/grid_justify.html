@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Grid Justify - Grant Cooper</title>
+
+<style>
+.grid-container{
+	display: grid;
+	height: 1000px;
+	width: 1000px;
+	justify-content: space-around;
+	grid-template-columns: 180px 280px 380px;
+	grid-template-rows: 200px 300px;
+	grid-row-gap: 50px;
+	background-color: #9403fc;
+	padding: 10px;	
+	background-image: linear-gradient(purple,#00ffc3);
+	border: 10px solid #00ffcc;
+
+	}
+
+.container{
+	
+}
+
+.grid-container > div {
+	background-image:linear-gradient(red,#00ffc3);
+	text-align: center;
+	padding: 20px 0;
+	font-size: 30px;
+	border: 10px solid #00ffcc;
+	}
+
+@media screen and (min-width: 600px) {
+  body {
+      background-color: red;
+}
+
+			
+</style>
+</head>
+<body>
+
+<h1><strong>Grid Justify</strong></h1>
+
+<p>Grids are used in most HTML pages to make it easier to adapt to mobile size and other features</p>
+
+<div class="grid-container">
+
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+	<div>4</div>
+	<div>5</div>
+	<div>6</div>
+	
+</div>
+
+
+
+</body>
+</html>

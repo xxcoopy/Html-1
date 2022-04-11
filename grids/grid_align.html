@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Grid Align - Grant Cooper</title>
+
+<style>
+.grid-container{
+	display: grid;
+	height: 400px;
+	align-content: center;
+	grid-template-columns: auto auto auto;
+	grid-gap: 10px;
+	background-color: #9403fc;
+	padding: 50px;	
+	border: 10px solid red;
+	border-style: solid;
+	border-color: #050000;
+
+	}
+
+.grid-container > div {
+	background-color: #fc03d3;
+	text-align: center;
+	padding: 20px 0;
+	font-size: 30px;
+	border: 5px;
+	border-style: solid;
+	border-color: #050000;
+	}
+
+@media screen and (min-width: 600px) {
+  body {
+      background-color: blue;
+}			
+</style>
+</head>
+<body>
+
+<h1><strong>Grid Align</strong></h1>
+
+<p>Grids are used in most HTML pages to make it easier to adapt to mobile size and other features</p>
+
+<div class="grid-container">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+	<div>4</div>
+	<div>5</div>
+	<div>6</div>
+	
+</div>
+
+
+
+
+
+</body>
+</html>
