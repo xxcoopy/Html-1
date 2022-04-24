@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta name="description" content="CWeb 1010 Assignment 4">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Grant Cooper">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Layout Three</title>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+
+.nav_container{
+width: 40%;
+margin-top:5px;
+float: right;
+text-align: right;
+}
+
+header {
+  background-color: #2a9d8f;
+  padding: 30px;
+  text-align: center;
+  font-size: 10px;
+  color: white;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #3C474B;
+}
+
+nav {
+  float: left;
+  width: 100%;
+  height: px; 
+  background: #2a9d8f;
+  padding: 5px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+
+h2 {
+  color: whitesmoke;
+}
+
+
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.left_column{
+float:right;
+width: 30%;
+padding: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #F1FFFA;
+  width: 100%;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #464E47;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+.clear{clear: both;}
+
+@media (max-width: 1600px) {
+ .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #F1FFFA;
+  width: 100%;
+}
+  .grid-item img {
+  width: 100%}
+}
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+  @media (max-width: 1600px) {
+ .grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  
+}
+
+</style>
+</head>
+<body>
+
+  <!-- Top Header of Webpage-->
+  <h1 style="color:black; background:#2a9d8f ;text-align: center">Cooper Information Security</h1>
+
+
+<!-- Company Slogan and Logo -->
+  <img alt="company logo" src="images/logo.jpeg" width="60" height="50" class="center">
+    <h2><em> Always Secure </em></h2>
+
+     <!-- Top Row Links -->
+  <nav>
+    <a href="https://www.youtube.com" style="color: black;">About</a>
+    <a href="mailto:grantcooper200@icloud.com" style="color: black;">Contact</a>
+    <a href="SecondWebsiteLink" style="color: black;">Services</a>
+    <a href="ThirdPageLink" style="color: black;">News</a>
+  </nav>
+
+    
+
+ 
+ <div class="clear"></div>
+ 
+<header>
+  <img src="images/banner6.jpg" alt="banner" width="100%" height="250">
+</header>
+
+<section>
+  <article>
+    <h1 style="color: whitesmoke;">Security Services</h1>
+    <p style="color: whitesmoke;">Decription of some services we provide</p>
+  </article>
+</section>
+
+<div class="grid-container">
+    <div class="grid-item"><img src="images/350x150.png" alt="350x150 placeholder"></div>
+    <div class="grid-item"><img src="images/350x150.png" alt="350x150 placeholder"></div>
+    <div class="grid-item"><img src="images/350x150.png" alt="350x150 Image placeholder"></div>  
+  </div>
+
+
+
+<div class="grid-container">
+    <div class="grid-item"><img src="images/350x150.png" alt="350x150 placeholder"></div>
+    <div class="grid-item"><img src="images/350x150.png" alt="350x150 placeholder"></div>
+    <div class="grid-item"><img src="images/350x150.png" alt="350x150 placeholder"></div>  
+  </div>
+
+<footer>
+  <nav>
+    <ul>
+      <li><a href="flexbox.html" style="color: black;">CIS Security is Trademarked</li>
+    </ul>
+  </nav>
+</footer>
+
+
+</body>
+</html>
