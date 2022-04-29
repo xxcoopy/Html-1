@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lab 4 - Grant Cooper</title>
+
+<style>
+
+body{
+	background-color: rgb(0, 25, 255);
+}
+
+.grid-container{
+	display: grid;
+	grid-template-columns: auto auto;
+	align-content: center;
+	background-color: linear-gradient( red, green, blue);
+	padding: 10px;
+	gap:  10px;
+	}
+
+.grid-item{
+	background-image: linear-gradient(to bottom right, red, green, blue);
+	border: 5px solid black;
+	align-content: center;
+	padding: 40px;
+	font-size: 30px;
+	text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-color: rgb(0, 255, 0);
+  }
+
+  @media screen and (min-width: 1024px) {
+  body {
+    background-color: rgb(255, 0, 0);
+  }
+			
+</style>
+</head>
+<body>
+
+<h1><strong>Colorful Search Engines</strong></h1>
+
+<input type="button" value="Change Background Color: Green" onClick="document.body.style.backgroundColor = 'green';">
+
+<input type="button" value="Reload Page" onClick="document.location.reload(true)">
+
+
+<div class="grid-container">
+	<div class="grid-item">
+		<img src="images/google.png" width="50" height="50">
+
+    <button onclick="openWin()">Open Google Search</button>
+    
+    <button onclick="closeWin()">Close Google Search</button>
+	</div>
+
+	<div class="grid-item">
+		<img src="images/bing.png" width="50" height="50">
+
+    <button onclick="openWin2()">Open Bing Search</button>
+    
+    <button onclick="closeWin2()">Close Bing Search</button>
+	</div>
+
+	<div class="grid-item">
+		<img src="images/wordpress.png" width="50" height="50">
+
+    <button onclick="openWin3()">Open Wordpress Search</button>
+    
+    <button onclick="closeWin3()">Close Wordpress Search</button>
+	</div>
+	<div class="grid-item">
+		<img src="images/duck.png" width="50" height="50">
+
+    <button onclick="openWin4()">Open DuckDuckGo Search</button>
+    
+    <button onclick="closeWin4()">Close DuckDuckGo Search</button>
+	</div>
+
+</div>
+
+ <script>
+            var myWindow;
+            
+            function openWin() {
+                myWindow = window.open("https://www.google.com/", "", "width=600,height=600");
+            }
+            
+            function openWin2() {
+                myWindow = window.open("https://www.bing.com/", "", "width=600,height=600");
+            }
+
+            function openWin3() {
+                myWindow = window.open("https://wordpress.org/", "", "width=600,height=600");
+            }
+
+            function openWin4() {
+                myWindow = window.open("https://duckduckgo.com/", "", "width=600,height=600");
+            }
+
+            function closeWin() {
+                myWindow.close();
+            }
+        </script>
+<script>
+	console.log('myWindow: ' + typeof openWin);
+	console.log('myWindow: ' + typeof openWin2);
+	console.log('myWindow: ' + typeof openWin3);
+	console.log('myWindow: ' + typeof openWin4);
+	console.log('closeWin: ' + typeof close);
+</script>
+
+
+</body>
+</html>
