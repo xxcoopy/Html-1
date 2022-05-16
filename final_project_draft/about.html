@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta name="description" content="CWeb 1010 Final Draft">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Grant Cooper">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">c
+    <link rel="stylesheet" type="text/css" href="StyleSheet.css">
+    <link rel="stylesheet" type="text/css" href="site-footer.css">
+
+<title>CIS Security - Products & Services</title>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+header {
+  background-color: #2a9d8f;
+  padding: 30px;
+  text-align: center;
+  font-size: 10px;
+  color: white;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #3C474B;
+}
+
+
+
+
+h2 {
+  color: whitesmoke;
+}
+
+
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.left_column{
+float:right;
+width: 30%;
+padding: 10px;
+}
+
+.grid-container {
+  display: grid;
+  background-color: #18191a;
+  grid-template-columns: auto auto auto;
+  width: 100%;
+}
+
+.grid-item {
+  background-color: rgba(15, 15, 15, 0.8);
+  border: 1px solid #18191a;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+
+
+@media (max-width: 1024px) {
+ .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #18191a;
+  width: 100%;
+}
+  .grid-item img {
+  width: 100%}
+}
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+  @media (max-width: 768px) {
+ .grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  
+}
+
+ @media (max-width: 768px) {
+ .grid-item {
+  font-size: 14px;
+  
+}
+
+
+
+</style>
+</head>
+<body>
+  
+     <!-- Top Row Links -->
+    <div class="nav-wrap">   
+  <ul class="group" id="fancy-nav">
+      <li class="current_page_item_two"><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href=mailto:grantcooper200@icloud.com?subject=CIS-Security>Contact</a>
+  </ul> 
+</div>
+
+<script>
+ $(function() {
+
+    var $el, leftPos, newWidth;
+        $mainNav2 = $("#fancy-nav");
+    
+    $mainNav2.append("<li id='magic-line-two'></li>");
+    
+    var $magicLineTwo = $("#magic-line-two");
+    
+    $magicLineTwo
+        .width($(".current_page_item_two").width())
+        .height($mainNav2.height())
+        .css("left", $(".current_page_item_two a").position().left)
+        .data("origLeft", $(".current_page_item_two a").position().left)
+        .data("origWidth", $magicLineTwo.width())
+        .data("origColor", $(".current_page_item_two a").attr("rel"));
+                
+    $("#fancy-nav a").hover(function() {
+        $el = $(this);
+        leftPos = $el.position().left;
+        newWidth = $el.parent().width();
+        $magicLineTwo.stop().animate({
+            left: leftPos,
+            width: newWidth,
+            backgroundColor: $el.attr("rel")
+        })
+    }, function() {
+        $magicLineTwo.stop().animate({
+            left: $magicLineTwo.data("origLeft"),
+            width: $magicLineTwo.data("origWidth")
+        });    
+    });
+    
+    $(".current_page_item_two a").mouseenter();
+    
+}); 
+</script>
+
+ <div class="clear"></div>
+ 
+<header>
+ <img alt="computer code" src="images/banner5.jpg" width="100%" height="250"  >
+</header>
+
+<br>
+<br>
+<br>
+<br>
+
+<div class="grid-container">
+
+    <div class="grid-item">
+      <article>
+      <h1 style="color: whitesmoke;"> CIS Security is here for major companies and every day users.
+      </h1>
+    </article>
+    </div>
+
+    <div class="grid-item">
+      <section>
+       <article>
+        <h1 style="color: whitesmoke;">Who Is CIS?</h1>
+        <p style="color: whitesmoke;">
+        CIS Security was founded in 2022 by determined student at dunwoody tech, Grant Cooper. The goal was to create a security company with top level services, that anyone and any company could partner with to secure their data and build a network impervious to todays cyber threats.
+        </p>
+       </article>
+      </section>
+    </div>
+ </div>
+
+
+
+<div class="grid-container">
+    <div class="grid-item">
+      <article>
+      <h2 style="color: whitesmoke;" > Founder of CIS Security - Grant Cooper
+      </h2>
+    </article>
+    </div>
+
+    <div class="grid-item">
+       <section>
+        <article>
+          <p style="color: whitesmoke;">
+          Grant Cooper founded CIS Security in 2022 while attending Dunwoody College of Technology. His mission was to start a security company that would allow large businesses, and every day people to have the same top level security.
+          </p>
+       </article>
+      </section>
+    </div>
+
+    <div class="grid-item-founder"><img src="images/Founder.jpg" alt="Photo of Grant Cooper" width="400px" height="300px"></div>
+
+  </div>
+
+  <!--   -->                                                                                                                                                                          
+ <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">CIS Security is a small security firm dedicated to giving top notch security to both moderate size organizations, and every day tech users. We strive to make every organization and every day user as safe as possible while they conduct busines, or do their every day web browsing.</p>
+          </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by 
+         <a href="home_page.html">CIS Security</a>.
+            </p>
+            <button type="button" onclick="myColor()">Set background color</button>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>
+
+
+   <!-- Script for background color change -->
+    <script>
+
+      function myColor() {
+        document.body.style.backgroundColor = "teal";}
+          
+    </script>
+
+</body>
+</html
