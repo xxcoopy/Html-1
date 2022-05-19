@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta name="description" content="CWeb 1010 Final Draft">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Grant Cooper">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">c
+    <link rel="stylesheet" type="text/css" href="StyleSheet.css">
+    <link rel="stylesheet" type="text/css" href="site-footer.css">
+    <link rel="stylesheet" type="text/css" href="topnav1.css">
+    
+<title>CIS Security - Home</title>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+header {
+  background-color: #2a9d8f;
+  padding: 30px;
+  text-align: center;
+  font-size: 10px;
+  color: white;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #3C474B;
+}
+
+
+
+
+h2 {
+  color: whitesmoke;
+}
+
+
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.left_column{
+float:right;
+width: 30%;
+padding: 10px;
+}
+
+.grid-container {
+  display: grid;
+  background-color: #18191a;
+  grid-template-columns: auto auto auto;
+  width: 100%;
+}
+
+.grid-item {
+  background-color: rgba(15, 15, 15, 0.8);
+  border: 1px solid #18191a;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+
+.grid-item-video {
+  background-color: rgba(15, 15, 15, 0.8);
+  border: 1px solid #18191a;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+.clear{clear: both;}
+
+
+@media (max-width: 1024px) {
+ .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #18191a;
+  width: 100%;
+}
+  
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+.clearfix::after {
+
+content: "";
+  clear: both;
+  display: grid;
+}
+
+.clear{clear: both;}
+
+  @media (max-width: 768px) {
+ .grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  
+}
+
+@media (max-width: 1000px) {
+ .grid-item {
+  font-size: 15px; 
+}
+
+ @media (max-width: 600px) {
+ .grid-item {
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+ .grid-item {
+  font-size: 14px;
+}
+
+ @media (max-width: 768px) {
+ iframe{
+ width: 300px; 
+ height: 200px; 
+}
+
+
+
+
+
+
+</style>
+</head>
+<body>
+          <!-- Top Row Links -->
+        <section class="navigation">
+            
+                
+                <div class="topnav" id="myTopnav">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="about.html">About</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">Services 
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="products.html">Products</a>
+                          
+                            
+                        </div>
+                    </div>  
+                    
+                    <a href="mailto:grantcooper200@icloud.com?subject=CIS Security">Contact</a>
+                
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+            
+            
+        </div>
+        
+    </section>
+    
+    <script>
+        function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+        x.className += " responsive";
+        } else {
+        x.className = "topnav";
+        }
+        }
+    </script>
+        
+
+
+ <div class="clear"></div>
+ 
+<<header>
+ <img alt="computer code" src="images/banner2.jpg" width="100%" height="250"  >
+</header>
+
+
+<section>
+  <article>
+    <h1 style="color: whitesmoke;">CIS Security</h1>
+    <h2 style="color: whitesmoke;"><i><u>Always Secure</u></i></h2>
+  </article>
+</section>
+
+<div class="grid-container">
+  <div class="grid-item">
+    <article>
+      <h1 style="color: whitesmoke;">Security<br>It's What We Do</h1>
+      <p style="color: whitesmoke;">
+      safe and secure using the best practices in the industry. We seek constant improvement and are continuously looking for ways to make your data as secure as possible, while keeping cost low. Whether you need to secure a server farm or a home network. We got your back.
+      </p>
+    </article>
+    </div>
+
+ </div>
+
+
+
+<div class="grid-container">
+    <div class="grid-item">
+      <h2>What is cyber security?</h2>
+      <p style="color: whitesmoke;">Cyber security is the practice of securing and definding networks, servers, computers, and mobile devices from malicous hackers and other attacks. </p>
+    </div>
+    <div class="grid-item"></div>
+    <div class="grid-item-video">
+      <iframe width="450" height="300" src="https://www.youtube.com/embed/inWWhr5tnEA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>  
+  </div>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+
+ <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">CIS Security is a small security firm dedicated to giving top notch security to both moderate size organizations, and every day tech users. We strive to make every organization and every day user as safe as possible while they conduct busines, or do their every day web browsing.</p>
+          </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by 
+         <a href="home_page.html">CIS Security</a>.
+            </p>
+            <button type="button" onclick="myColor()">Set background color</button>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="https://www.facebook.com/grant.cooper.75"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="https://twitter.com/xxcoopy"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="linkedin" href="https://www.linkedin.com/in/grant-cooper-aa495223a/"><i class="fa fa-linkedin"></i></a></li>      
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>
+
+   <!-- Script for background color change -->
+    <script>
+
+      function myColor() {
+        document.body.style.backgroundColor = "teal";}
+          
+    </script>
+
+</body>
+</html
